@@ -16,6 +16,11 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-theme01 : #a9dfef;
+  --color-theme02 : #d2def0;
+  --color-theme03 : #bbe4e1;
+  --color-theme04 : #d3ebda;
+  --color-theme05 : #b8c4e4;
 
   /* Font size */
   --font-large: 48px;
@@ -257,7 +262,7 @@ p {
 /* Skill */
 
 #skills {
-  background-color: var(--color-light-blue);
+  background-color: var(--color-theme02);
 }
 
 .skillset {
