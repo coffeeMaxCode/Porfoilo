@@ -1,224 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>peachPorfoilo</title>
-    <mata name="description" content="portfoilo"/>
-    <mata name="author" content="peach"/>
-    <link rel="icon" type="image/png" href="images/peachCoffee.png"/>
-    <script 
-        src="https://kit.fontawesome.com/96e3e46ef0.js" 
-        crossorigin="anonymous">
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
-        rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link src="main.js" defer/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hyuntae's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Max who will change the world by code"
+    />
+    <meta name="author" content="MaxMillion" />
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/96e3e46ef0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar_log">
-            <i class="fas fa-mug-hot"></i>
-            <a href="#">Peach</a>
-        </div>
-        <div class="navbar_menu">
-            <ul class="navbar_menu">
-                <li class="navbar_item">Home</li>
-                <li class="navbar_item">About</li>
-                <li class="navbar_item">Skills</li>
-                <li class="navbar_item">myWokr</li>
-                <li class="navbar_item">Testimonail</li>
-                <li class="navbar_item">Contact</li>
-            </ul>
-        </div>
+      <div class="navbar__logo">
+        <i class="fas fa-mug-hot"></i>
+        <a href="#">Kim hyuntae</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home -->
     <section id="home">
+      <div class="home__container">
         <img
-            src="Images/porfilePic.jpg"
-            alt="peachProfilePhoto"
-            class="home_avatar"/>
-        <h1 class="home_title">Hello, <br/> I'm Peach Coder</h1>
-        <h2 class="home_description">I'm a developer <br/> who can changes the world!</h2>
+          src="imgs/profile.jpg"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title" id="shadow">Hello, <br />I'm Kim hyuntae</h1>
+        <h2 class="home__description" id="shadow">
+          Engineer who will change the world by my code 
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
 
     <!-- About -->
-    <section id="about">
-        <h1>About me</h1>
-        <p>
-            This is max miliion kim. how can i be developer who can change this world?
-            I major industrial management but my passion is make Front-end now.
-        </p>
-        <div class="about_majors">
-            <div class="major">
-                <div class="major_icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major_title">Front-end</div>
-                <div class="major_description">
-                    HTML. CSS, JavaScript TypeScript,
-                    <br/>React, Vue, Web APIs
-                </div>
-            </div>
-            <div class="major">
-                <div class="major_icon">
-                    <i class="fas fa-mobile"></i>
-                </div>
-                <div class="major_title">Front-end</div>
-                <div class="major_description">
-                    HTML. CSS, JavaScript TypeScript,
-                    <br/>React, Vue, Web APIs
-                </div>
-            </div>
-            <div class="major">
-                <div class="major_icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major_title">Front-end</div>
-                <div class="major_description">
-                    HTML. CSS, JavaScript TypeScript,
-                    <br/>React, Vue, Web APIs
-                </div>
-            </div>
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        나에 대한 작성
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript,
+            <br />React, Vue, Web APIs
+          </div>
         </div>
-        <div class="about_major">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">
+            Android, iOS,
+            <br />Java, Swift
+          </p>
         </div>
-        <div class="major_job">
-            <div class="job">
-                <img src="Images/logoM2m.png" alt="Logo_M2M_Global" class="job_log"/>
-                <div class="job_name">초급개발자</div>
-                <div class="job_period">일한기간</div>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Java, JavaScript, 
+            <br />NodeJS, Rest APIs
+          </p>
         </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/logo-M2m.png"
+            alt="M2MGlobal"
+            class="job__logo"
+          />
+        <div class="job__description">
+          <p class="job__name">
+            Currently working at Samsung as Software Engineer
+          </p>
+          <p class="job__period">2019 Dec - Until now</p>
+        </div>
+        </div>
+        <!-- 
+          <div class="job">
+          <img
+            src="imgs/jobs/logo-samsung.png"
+            alt="samsung"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">2019 Sept - Until now</p>
+          </div> 
+          -->
+      </div>
     </section>
+
     <!-- Skills -->
-    <section id="skills">
-        <div class="h1">Skills</div>
-        <div class="h2">Skills & Attributes</div>
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
         <p>
-            스킬에 대한 이야기 써보자
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
         </p>
-        <div class="skillSet">
-            <div class="skillSet_left">
-                <h3 class="skillset_title">Skils</h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skil_bar">
-                        <div class="skillset_value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>CSS</span>
-                        <span>99%</span>
-                        <div class="skil_bar">
-                            <div class="skillset_value"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>JavaScript</span>
-                            <span>99%</span>
-                            <div class="skil_bar">
-                                <div class="skillset_value"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%;"></div>
+              </div>
             </div>
-            <div class="skilSet_right">
-                <div class="tools">
-                    <h3 class="skillset_title">Tools</h3>
-                    <ul class="tools_list">
-                        <li><span>Eclipse</span></li>
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Android Studio</span></li>
-                        <li><span>Swift</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                        <ul class="etc_list">
-                        <li><span>Git</span></li>
-                        <li><span>Coffee</span></li>
-                        <li><span>Git</span></li>
-                        <li><span>Git</span></li>
-                        <li><span>Git</span></li>
-                    </ul>
-                </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
             </div>
-        </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>88%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>77%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 77%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Eclipse</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Android Studio Code</span></li>
+                <li><span>Swift</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </section>
+
     <!-- Work -->
-    <section id="work">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work_categories">
-            <button class="category_btn">
-                All<span class="category_count">8</span>
-            </button>
-            <button class="category_btn">F
-                ront-end<span class="category_count">3</span>
-            </button>
-            <button class="category_btn">
-                Back-end<span class="category_count">3</span>
-            </button>
-            <button class="category_btn">
-                Mobile<span class="category_count">1</span>
-            </button>
-        </div>
-
-        <div class="work_projects">
-            <a class="project_img"
-                href="http://www.nonghyupmall.com/" 
-                class="project"
-                target="blank">
-                <img src="Images/project/nh_mall.jpg" alt="농협몰">
-                <div class="project_description">농협몰</div>
-                <span>농협몰 고도화 프로젝트</span>
-            </a>
-        </div>
+    <section id="work" class="section">
+    <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="back-end">
+          Back-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="mobile">
+          Mobile <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type="front-end">
+          <img
+            src="imgs/projects/youtube.png"
+            alt="Youtube"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML, CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/dream-ellie/responsive-nav-bar"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="imgs/projects/navbar.png"
+            alt="navbar"
+          />
+          <div class="project__description">
+            <h3>Responsive Navbar</h3>
+            <span>HTML, CSS with media query</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/dream-ellie/responsive-nav-bar"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
+          <div class="project__description">
+            <h3>Shopping mall game</h3>
+            <span>HTML, CSS, JavaScript, Json</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+      </div>
+    </div>
     </section>
+
     <!-- Testimonials -->
-    <section id="testimonials">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img 
-                src="Images/testimonial/people.jpg" 
-                alt="poeople"
-                class="testimonial_avatar"/>
-            </div>
-            <div class="testimonial_bubble">
-                <p>bubulebulebubulebulebubulebule</p> 
-            </div>
-            <p class="name"><a>Max</a> / Peach</p>
+    <section id="testimonials" class="section">
+    <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="imgs/testimonial/people1.jpg"
+          alt="People"
+          class="testimonial__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
         </div>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img 
-                src="Images/testimonial/people.jpg" 
-                alt="poeople"
-                class="testimonial_avatar"/>
-            </div>
-            <div class="testimonial_bubble">
-                <p>bubulebulebubulebulebubulebule</p> 
-            </div>
-            <p class="name"><a>Max</a> / Peach</p>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
         </div>
+        <img
+        src="imgs/testimonial/people1.jpg"
+        alt="People"
+        class="testimonial__avatar"
+      />
+      </div>
+    </div>
+    </div>
     </section>
-    <!-- contact -->
-    <setion id="contact">
 
-    </setion>
-</body>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">bada0105@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/dream-ellie" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2019 PeachCoffee - All rights reserved
+      </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
 </html>
