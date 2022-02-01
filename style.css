@@ -10,17 +10,17 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-light-blue: #7Eb0F2;
-  --color-blue: #5096F2;
-  --color-dark-blue: #3084F2;
+  --color-light-blue: #7eb0f2;
+  --color-blue: #5096f2;
+  --color-dark-blue: #3084f2;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-theme01 : #a9dfef;
-  --color-theme02 : #d2def0;
-  --color-theme03 : #bbe4e1;
-  --color-theme04 : #d3ebda;
-  --color-theme05 : #b8c4e4;
+  --color-theme01: #a9dfef;
+  --color-theme02: #d2def0;
+  --color-theme03: #bbe4e1;
+  --color-theme04: #d3ebda;
+  --color-theme05: #b8c4e4;
 
   /* Font size */
   --font-large: 48px;
@@ -424,6 +424,11 @@ p {
   background-color: var(--color-dark-white);
 }
 
+.project__description span {
+  /*codeMax*/
+  display: block;
+}
+
 /* Testimonial */
 #testimonials {
   background-color: var(--color-light-white);
@@ -534,7 +539,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-light-blue));
+    background-color: var(--color-light-blue);
   }
 
   #navbar.navbar--dark {
