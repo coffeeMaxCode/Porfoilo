@@ -660,3 +660,7 @@ p {
   background-color: var(--color-white);
   line-height: 1.5;
 }
+
+.col-company {
+  width: 160px;
+}
