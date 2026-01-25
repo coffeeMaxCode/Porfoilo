@@ -243,10 +243,14 @@ p {
   margin-bottom: 20px;
 }
 
-.job__logo {
+.job__logo2 {
   width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  height: 120px;
+}
+
+.job__logo {
+  width: 265px;
+  height: 45px;
 }
 
 .job__description {
