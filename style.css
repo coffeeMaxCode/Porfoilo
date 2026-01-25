@@ -244,12 +244,9 @@ p {
 }
 
 .job__logo {
-  width: 270px;
-  height: 45px;
-}
-.job__logo2 {
   width: 280px;
-  height: 120px;
+  height: 280px;
+  border-radius: 50%;
 }
 
 .job__description {
@@ -623,6 +620,7 @@ p {
     right: 16px;
     bottom: 16px;
   }
+}
 
 /* Project History Table */
 .work__history {
@@ -657,5 +655,4 @@ p {
 .history__table td {
   background-color: var(--color-white);
   line-height: 1.5;
-}
 }
