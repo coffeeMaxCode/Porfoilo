@@ -245,8 +245,7 @@ p {
 
 .job__logo {
   width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  height: 50px;
 }
 
 .job__description {
