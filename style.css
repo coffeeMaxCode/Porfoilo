@@ -239,6 +239,14 @@ p {
 .job {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.job__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 .job__description {
