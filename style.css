@@ -623,4 +623,39 @@ p {
     right: 16px;
     bottom: 16px;
   }
+
+/* Project History Table */
+.work__history {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.history__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+  font-size: var(--font-small);
+  color: var(--color-black);
+}
+
+.history__table th,
+.history__table td {
+  border: 1px solid var(--color-dark-white);
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.history__table th {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+  font-weight: var(--weight-semi-bold);
+}
+
+.history__table td {
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
 }
