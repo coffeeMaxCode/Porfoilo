@@ -664,3 +664,7 @@ p {
 .col-company {
   width: 160px;
 }
+
+.col-project {
+  width: 300px;
+}
