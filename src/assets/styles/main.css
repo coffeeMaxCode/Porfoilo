@@ -1,0 +1,65 @@
+.section {
+  padding: 140px 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section_container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px;
+}
+
+.section h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+/* Shared utility classes (extracted from repeated component styles) */
+.card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--size-border-radius);
+  box-shadow: var(--shadow-sm);
+  padding: 40px;
+}
+
+.lift {
+  transition: transform var(--animation-duration) ease,
+    box-shadow var(--animation-duration) ease;
+}
+
+.lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.transition {
+  transition: all var(--animation-duration) ease;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bar {
+  height: 8px;
+  border-radius: 999px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 88px 20px;
+  }
+}

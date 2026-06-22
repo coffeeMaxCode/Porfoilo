@@ -1,0 +1,76 @@
+#skills {
+  background-color: var(--color-bg-soft);
+}
+
+.skillset {
+  display: flex;
+  gap: 24px;
+  margin: 48px 0 0;
+  text-align: left;
+}
+
+.skillset_title {
+  color: var(--color-primary);
+  font-size: var(--font-regular);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.skillset_left {
+  flex-basis: 60%;
+}
+
+.skill {
+  margin-bottom: 24px;
+}
+
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-small);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.skill_bar {
+  width: 100%;
+  background-color: var(--color-bg-muted);
+  overflow: hidden;
+}
+
+.skill_value {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 100%
+  );
+}
+
+.skillset_right {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skillset_right ul {
+  margin: 0;
+}
+
+.skillset_right li {
+  color: var(--color-text-soft);
+  font-size: var(--font-small);
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .skillset {
+    flex-direction: column;
+  }
+}

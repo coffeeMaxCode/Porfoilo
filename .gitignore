@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output (GitHub Actions builds this automatically)
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+.project
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
